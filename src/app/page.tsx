@@ -98,8 +98,9 @@ export default function Home() {
       <Header setLanguage={setSelectedLanguage} onChange={handleCodeChange} />
 
       {/* Main Content */}
-      <div className="flex-1 flex overflow-hidden">
-        <div className="flex-1 border-r border-gray-700">
+      <div className="flex-1 flex flex-col md:flex-row overflow-hidden">
+        {/* Code Editor */}
+        <div className="flex-1 border-b md:border-b-0 md:border-r border-gray-700">
           <CodeEditor
             language={selectedLanguage}
             onChange={handleCodeChange}
@@ -110,7 +111,7 @@ export default function Home() {
         </div>
 
         {/* Output Panel */}
-        <div className="w-1/3 min-w-[300px]">
+        <div className="w-full md:w-1/3 min-h-[250px] md:min-h-0">
           <OutputPanel
             output={output}
             isRunning={isRunning}
