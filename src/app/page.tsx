@@ -1,6 +1,6 @@
 "use client";
 import Header from "./components/Header";
-import { useCallback, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import { codeTemplates } from "./data/CodeTemplates";
 import CodeEditor from "./components/CodeEditor";
 import { useCompileCode } from "./hooks/useCompileCode";
@@ -22,10 +22,12 @@ export default function Home() {
     setCode(value || "");
   }, []);
 
+  // Clearing the Output from Output Panel
   const clearOutput = useCallback(() => {
     setOutput("");
   }, []);
 
+  // on Click of Run Executing the Respective Language Code
   const executeCode = async () => {
     setIsRunning(true);
     setOutput("Executing...");
@@ -82,6 +84,14 @@ export default function Home() {
         break;
     }
   };
+
+  // Adding useEffect to activate Backend Services on server on load of the page
+  useEffect(() => {
+    (async () => {
+      const javaOuptut = await javaQuery.refetch();
+    })();
+  }, []);
+
   return (
     <div className="h-screen flex flex-col bg-gray-900 text-white">
       {/* Header */}
