@@ -28,10 +28,7 @@ An **Online Code Editor** built as a personal learning project to practice and s
 
 ## 📂 Project Structure
 
-<<<<<<< HEAD
 ```plaintext
-=======
->>>>>>> b168666fe0243d8e3f657a1863f29c91bb21491d
 ├── app/                          # Next.js App Router (frontend + backend routes)
 │   ├── api/                      # API routes for code execution
 │   │   ├── javaExecuter/         # Java execution endpoint
@@ -52,7 +49,6 @@ An **Online Code Editor** built as a personal learning project to practice and s
 ├── tsconfig.json                 # TypeScript configuration
 ├── Dockerfile                    # Docker configuration for deployment
 └── README.md                     # Project documentation
-<<<<<<< HEAD
 ```
 
 ---
@@ -123,5 +119,3 @@ Check the project structure for guidance on where to add new language support.
 
 **Happy Coding!** 🚀\
 For questions or feedback, feel free to open an issue on GitHub or reach out via LinkedIn.
-=======
->>>>>>> b168666fe0243d8e3f657a1863f29c91bb21491d
