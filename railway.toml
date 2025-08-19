@@ -5,7 +5,7 @@ buildCommand = "npm run build"
 [nixpacks]
 packages = [
   "nodejs",
-  "openjdk-17",
+  "openjdk",
   "python3",
   "pip"
 ]
