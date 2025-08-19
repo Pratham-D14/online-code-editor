@@ -11,7 +11,7 @@ export async function POST(request: Request) {
 
   try {
     const result = await new Promise((resolve) => {
-      const pythonProcess = spawn("python", ["-c", pythonCode]);
+      const pythonProcess = spawn("python3", ["-c", pythonCode]);
 
       let stdout = "";
       let stderr = "";
