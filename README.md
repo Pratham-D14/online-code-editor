@@ -1,4 +1,4 @@
-## 🖥️ Online Code Editor
+## 🖥️ [Online Code Editor](https://online-code-editor-production-2060.up.railway.app/)
 
 An **Online Code Editor** built as a personal learning project to practice and showcase my skills as a software developer.  
 This project provides a simple, interactive environment where users can write, edit, and run code directly in the browser.
@@ -25,3 +25,30 @@ This project provides a simple, interactive environment where users can write, e
 ---
 
 ## 📂 Project Structure
+
+├── app/ # Next.js App Router (frontend + backend routes)
+│ ├── api/ # API routes for code execution
+│ │ ├── javaExecuter/ # Java execution endpoint
+│ │ ├── pythonExecuter/ # Python execution endpoint
+│ │ └── ... # (Expandable for more languages)
+│ ├── page.tsx/ # Main editor UI
+│ ├── globals.css # Global styles
+│ └── layout.tsx # App layout
+|
+│ └──data/ # Dummy Code for Lanaguages
+|
+│
+│ └──components/ # Reusable UI components
+│ | ├── CodeEditor.tsx # Monaco Editor integration
+│ | ├── Header.tsx # Header / Navigation
+│ | └── OutputPanel.tsx # Output display panel
+│
+|
+│ └──Hooks/ # Reusable React Hooks
+│ | ├── useCompileCode.tsx # custom hook for API Calling
+|
+├── public/ # Static assets (icons, images, etc.)
+├── package.json # Dependencies & scripts
+├── tsconfig.json # TypeScript configuration
+├── Dockerfile
+└── README.md # Project documentation
