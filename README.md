@@ -26,30 +26,23 @@ This project provides a simple, interactive environment where users can write, e
 
 ## 📂 Project Structure
 
-
-├── app/ # Next.js App Router (frontend + backend routes) \n
-│ ├── api/ # API routes for code execution \n
-│ │ ├── javaExecuter/ # Java execution endpoint \n
-│ │ ├── pythonExecuter/ # Python execution endpoint \n 
-│ │ └── ... # (Expandable for more languages) \n
-│ ├── page.tsx/ # Main editor UI \n
-│ ├── globals.css # Global styles \n
-│ └── layout.tsx # App layout \n
-| \n
-│ └──data/ # Dummy Code for Lanaguages
-|
-│
-│ └──components/ # Reusable UI components
-│ | ├── CodeEditor.tsx # Monaco Editor integration
-│ | ├── Header.tsx # Header / Navigation
-│ | └── OutputPanel.tsx # Output display panel
-│
-|
-│ └──Hooks/ # Reusable React Hooks
-│ | ├── useCompileCode.tsx # custom hook for API Calling
-|
-├── public/ # Static assets (icons, images, etc.)
-├── package.json # Dependencies & scripts
-├── tsconfig.json # TypeScript configuration
-├── Dockerfile
-└── README.md # Project documentation
+├── app/                          # Next.js App Router (frontend + backend routes)
+│   ├── api/                      # API routes for code execution
+│   │   ├── javaExecuter/         # Java execution endpoint
+│   │   ├── pythonExecuter/       # Python execution endpoint
+│   │   └── ...                   # Expandable for additional languages
+│   ├── page.tsx                  # Main editor UI
+│   ├── globals.css               # Global styles
+│   ├── layout.tsx                # App layout
+│   ├── data/                     # Dummy code for supported languages
+│   ├── components/               # Reusable UI components
+│   │   ├── CodeEditor.tsx        # Monaco Editor integration
+│   │   ├── Header.tsx            # Header/Navigation component
+│   │   └── OutputPanel.tsx       # Output display panel
+│   ├── Hooks/                    # Reusable React Hooks
+│   │   └── useCompileCode.tsx    # Custom hook for API calls
+├── public/                       # Static assets (icons, images, etc.)
+├── package.json                  # Dependencies and scripts
+├── tsconfig.json                 # TypeScript configuration
+├── Dockerfile                    # Docker configuration for deployment
+└── README.md                     # Project documentation
