@@ -1,14 +1,2 @@
 [build]
-builder = "NIXPACKS"
-buildCommand = "npm run build"
-
-[nixpacks]
-packages = [
-  "nodejs",
-  "openjdk",
-  "python3",
-  "pip"
-]
-
-[deploy]
-startCommand = "npm run start"
+builder = "DOCKERFILE"
