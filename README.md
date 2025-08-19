@@ -26,15 +26,16 @@ This project provides a simple, interactive environment where users can write, e
 
 ## 📂 Project Structure
 
-├── app/ # Next.js App Router (frontend + backend routes)
-│ ├── api/ # API routes for code execution
-│ │ ├── javaExecuter/ # Java execution endpoint
-│ │ ├── pythonExecuter/ # Python execution endpoint
-│ │ └── ... # (Expandable for more languages)
-│ ├── page.tsx/ # Main editor UI
-│ ├── globals.css # Global styles
-│ └── layout.tsx # App layout
-|
+
+├── app/ # Next.js App Router (frontend + backend routes) \n
+│ ├── api/ # API routes for code execution \n
+│ │ ├── javaExecuter/ # Java execution endpoint \n
+│ │ ├── pythonExecuter/ # Python execution endpoint \n 
+│ │ └── ... # (Expandable for more languages) \n
+│ ├── page.tsx/ # Main editor UI \n
+│ ├── globals.css # Global styles \n
+│ └── layout.tsx # App layout \n
+| \n
 │ └──data/ # Dummy Code for Lanaguages
 |
 │
