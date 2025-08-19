@@ -84,17 +84,6 @@ An **Online Code Editor** built as a personal learning project to practice and s
 
 4. Open http://localhost:3000 in your browser.
 
-### Deployment
-
-To deploy the project using Docker:
-
-```bash
-docker build -t online-code-editor .
-docker run -p 3000:3000 online-code-editor
-```
-
----
-
 ## 🤝 Contributing
 
 Contributions are welcome! Want to add support for a new programming language or enhance the editor? Follow these steps:
