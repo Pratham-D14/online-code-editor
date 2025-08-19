@@ -1,0 +1,13 @@
+[build]
+builder = "NIXPACKS"
+
+[nixpacks]
+packages = [
+  "nodejs",       # Node.js runtime
+  "openjdk",      # Java JDK (for javac/java)
+  "python3",      # Python 3
+  "pip"           # Pip package manager
+]
+
+[deploy]
+startCommand = "npm run start"  # or "next start" if you’re using Next.js build
